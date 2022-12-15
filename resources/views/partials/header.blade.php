@@ -51,8 +51,11 @@
           <a class="nav-link" href="#">CHARACTERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">COMICS</a>
-        </li>
+          <a class="nav-link {{Route::currentRouteName() == 'single' ? 'active' : ''
+          }}" href="{{ route('single') }}">
+              COMICS
+          </a>
+      </li>
         <li class="nav-item">
           <a class="nav-link" href="#">MOVIES</a>
         </li>
@@ -83,9 +86,7 @@
           <input type="search" id="form1" class="form-control" />
           <label class="form-label" for="form1">Search</label>
         </div>
-        <button type="button" class="btn btn-primary">
-          <i class="fas fa-search"></i>
-        </button>
+        
       </div>
     <!-- Right elements -->
   </div>
